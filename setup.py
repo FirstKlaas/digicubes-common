@@ -29,6 +29,7 @@ setup(
     packages=find_namespace_packages(
         include=["digicubes.*"]
     ),
+    namspaces_packages=['digicubes'],
     zip_safe=True,
     # Include additional files into the package
     include_package_data=False,
