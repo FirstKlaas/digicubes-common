@@ -7,7 +7,7 @@ def version() -> str:
     """
     Returns the current version of the digicubes server
     """
-    return "0.0.10"
+    return "0.0.11"
 
 def requirements() -> list:
     """
@@ -29,6 +29,7 @@ setup(
     packages=find_namespace_packages(
         include=["digicubes.*"]
     ),
+    namspaces_packages=['digicubes'],
     zip_safe=True,
     # Include additional files into the package
     include_package_data=False,

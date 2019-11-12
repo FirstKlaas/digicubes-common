@@ -51,8 +51,6 @@ class RightEntity(Enum):
     UPDATE_COURSE = {"name": "update_course", "roles": []}
     DELETE_COURSE = {"name": "delete_course", "roles": []}
 
-    
-
     @property
     def name(self):
         return dict(self.value)["name"]
