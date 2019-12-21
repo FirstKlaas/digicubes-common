@@ -1,4 +1,4 @@
-checkfiles = digicubes/ 
+checkfiles = digicubes_common/ 
 
 help:
 	@echo  "DigiCubes platform development makefile"
@@ -31,16 +31,16 @@ docs:
 
 ci:	check
 	pylint --errors-only $(checkfiles)
-	nose2 -v digicubes
+	#nose2 -v digicubes
 
 nose: deps
 	nose2 -v digicubes
 
 check: deps
-	black -l 100 --check digicubes/
+	black -l 100 --check $(checkfiles)
 
 style:
-	black -l 100 digicubes/ 
+	black -l 100 $(checkfiles) 
 
 badges: deps
 	python lintbadge.py

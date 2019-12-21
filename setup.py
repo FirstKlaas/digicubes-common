@@ -1,13 +1,13 @@
 """
 Setup file for the digicubes package
 """
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages
 
 def version() -> str:
     """
     Returns the current version of the digicubes server
     """
-    return "0.0.14"
+    return "0.1.0"
 
 def requirements() -> list:
     """
@@ -26,10 +26,7 @@ setup(
     # License
     license="Apache License Version 2.0",
     # Packages
-    packages=find_namespace_packages(
-        include=["digicubes.*"]
-    ),
-    namspaces_packages=['digicubes'],
+    packages=["digicubes_common"],
     zip_safe=True,
     # Include additional files into the package
     include_package_data=False,
