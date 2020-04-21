@@ -10,6 +10,7 @@ class Route(Enum):
     All available url patterns
     """
 
+    info = "/info"
     login = "/login/"
     new_token = "/token/"
     password = "/users/{user_id}/password/"
@@ -42,6 +43,8 @@ class Route(Enum):
 
     school_courses = "/courses/{school_id}"
 
+    # Update ore delete an existing course
+    course = "/course/{course_id}"
 
 def url_for(route: Route, **kwargs) -> str:
     """

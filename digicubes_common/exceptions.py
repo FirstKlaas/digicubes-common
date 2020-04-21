@@ -48,3 +48,7 @@ class BadPassword(DigiCubeError):
 
 class NotAuthenticated(DigiCubeError):
     """User is not logged in"""
+
+
+class ConfigurationError(DigiCubeError):
+    """Configuration wrong or missing"""
