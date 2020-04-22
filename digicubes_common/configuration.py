@@ -46,6 +46,7 @@ class Route(Enum):
     # Update ore delete an existing course
     course = "/course/{course_id}"
 
+
 def url_for(route: Route, **kwargs) -> str:
     """
     Get the formatted url for a given route.
