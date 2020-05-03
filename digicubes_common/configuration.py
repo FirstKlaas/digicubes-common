@@ -46,6 +46,11 @@ class Route(Enum):
     # Update ore delete an existing course
     course = "/course/{course_id}"
 
+    # POST: Create a new unit for an unit
+    # GET: Get the units of the course
+    # DELETE: Delete all units of a course 
+    units = "/unit/{course_id}"
+
 
 def url_for(route: Route, **kwargs) -> str:
     """
