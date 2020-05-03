@@ -48,7 +48,7 @@ class Route(Enum):
 
     # POST: Create a new unit for an unit
     # GET: Get the units of the course
-    # DELETE: Delete all units of a course 
+    # DELETE: Delete all units of a course
     units = "/unit/{course_id}"
 
 
