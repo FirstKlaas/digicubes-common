@@ -35,6 +35,8 @@ class BearerTokenData(BaseData):
     # pylint: disable=C0111
     bearer_token: str
     user_id: int
+    lifetime: int  # Lifetime (max age) of this token
+    expires_at: str  # expiration date as iso formatted string
 
 
 @attr.s(auto_attribs=True)
