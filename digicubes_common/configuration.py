@@ -41,7 +41,7 @@ class Route(Enum):
     schools = "/schools/"
     school = "/school/{school_id}"
 
-    school_courses = "/courses/{school_id}"
+    school_courses = "/school/{school_id}/courses/"
 
     # Update ore delete an existing course
     course = "/course/{course_id}"
