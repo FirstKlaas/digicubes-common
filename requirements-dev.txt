@@ -35,13 +35,12 @@ gitpython==3.1.1          # via bandit
 green==3.1.1              # via -r requirements-dev.in
 idna==2.9                 # via requests
 imagesize==1.2.0          # via sphinx
-importlib-metadata==1.6.0  # via keyring, pluggy, pytest, tox, twine, virtualenv
 isort[pyproject]==4.3.21  # via flake8-isort, pylint
 jeepney==0.4.3            # via keyring, secretstorage
 jinja2==2.11.2            # via pybadges, sphinx
 keyring==21.2.1           # via twine
 lazy-object-proxy==1.4.3  # via astroid
-lxml==4.5.0               # via green
+lxml==4.6.2               # via green
 markupsafe==1.1.1         # via jinja2
 mccabe==0.6.1             # via flake8, pylint
 more-itertools==8.2.0     # via pytest
@@ -88,7 +87,7 @@ toml==0.10.0              # via black, isort, pylint, tox
 tox==3.15.0               # via -r requirements-dev.in
 tqdm==4.46.0              # via twine
 twine==3.1.1              # via -r requirements-dev.in
-typed-ast==1.4.1          # via astroid, black, mypy
+typed-ast==1.4.1          # via black, mypy
 typing-extensions==3.7.4.2  # via mypy
 unidecode==1.1.1          # via green
 urllib3==1.25.9           # via requests
@@ -96,7 +95,6 @@ virtualenv==20.0.19       # via tox
 wcwidth==0.1.9            # via pytest
 webencodings==0.5.1       # via bleach
 wrapt==1.12.1             # via astroid
-zipp==3.1.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
